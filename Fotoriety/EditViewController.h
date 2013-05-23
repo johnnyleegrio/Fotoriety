@@ -16,5 +16,7 @@
 @property (weak, nonatomic) IBOutlet UITextView *editTextField;
 @property (strong, nonatomic) FotorietyModel *fm;
 @property(nonatomic, readonly) ALAsset *originalAsset;
+@property (weak, nonatomic) IBOutlet UIButton *submitNotesButton;
+- (IBAction)submitPhotoNotes:(id)sender;
 
 @end

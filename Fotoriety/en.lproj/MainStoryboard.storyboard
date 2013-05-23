@@ -117,6 +117,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="submitPhotoNotes:" destination="0FI-lU-3pL" eventType="touchDown" id="6zg-Ow-hD4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -138,6 +141,7 @@
                     <connections>
                         <outlet property="editPagePhoto" destination="kEk-Ks-u8a" id="u1i-3t-ogd"/>
                         <outlet property="editTextField" destination="bag-9p-b9q" id="HuC-uT-XIK"/>
+                        <outlet property="submitNotesButton" destination="syf-vX-gq3" id="3qS-Ln-Mbs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xhj-yn-hdy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -157,8 +161,10 @@
         <class className="EditViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/EditViewController.h"/>
             <relationships>
+                <relationship kind="action" name="submitPhotoNotes:"/>
                 <relationship kind="outlet" name="editPagePhoto" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="editTextField" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="submitNotesButton" candidateClass="UIButton"/>
             </relationships>
         </class>
         <class className="MainViewController" superclassName="UIViewController">

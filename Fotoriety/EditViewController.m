@@ -38,10 +38,10 @@
     ALAssetsLibrary* assetslibrary = [[ALAssetsLibrary alloc] init];
     [assetslibrary assetForURL:[NSURL URLWithString:mediaurl]
                    resultBlock:resultblock
-                  failureBlock:failureblock];    
+                  failureBlock:failureblock];
+}
 
-
-
+- (IBAction)submitPhotoNotes:(id)sender {
 }
 
 @end
