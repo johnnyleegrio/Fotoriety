@@ -9,5 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface FotorietyModel : NSObject
+@property NSURL *imageURL;
+
++ (FotorietyModel*) sharedManager;
++ (id)allocWithZone:(NSZone *)zone;
+- (id)copyWithZone:(NSZone *)zone;
 
 @end

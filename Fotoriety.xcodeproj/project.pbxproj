@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		7A310C8317432E4600CD5263 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A310C8217432E4600CD5263 /* EditViewController.m */; };
 		7A39A7A31749AFE600F19669 /* fotoriety.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A39A7A21749AFE600F19669 /* fotoriety.png */; };
-		7A39A7A51749B07000F19669 /* fotoriety114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A39A7A41749B07000F19669 /* fotoriety114x114.png */; };
-		7A39A7A71749B07400F19669 /* fotoriety57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A39A7A61749B07400F19669 /* fotoriety57x57.png */; };
 		7A39A7AC1749D41100F19669 /* FotorietyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A39A7AB1749D41100F19669 /* FotorietyModel.m */; };
 		7A4B132817406EA9003241F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A4B132717406EA9003241F3 /* UIKit.framework */; };
 		7A4B132A17406EA9003241F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A4B132917406EA9003241F3 /* Foundation.framework */; };
@@ -23,14 +21,15 @@
 		7A4B133E17406EA9003241F3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A4B133D17406EA9003241F3 /* Default-568h@2x.png */; };
 		7A4B134117406EA9003241F3 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A4B133F17406EA9003241F3 /* MainStoryboard.storyboard */; };
 		7A4B134417406EA9003241F3 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A4B134317406EA9003241F3 /* MainViewController.m */; };
+		7AFBF51A174EA6A2004C080F /* fotoriety57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AFBF518174EA6A2004C080F /* fotoriety57x57.png */; };
+		7AFBF51B174EA6A2004C080F /* fotoriety114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AFBF519174EA6A2004C080F /* fotoriety114x114.png */; };
+		7AFBF51D174EBB2A004C080F /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AFBF51C174EBB2A004C080F /* AssetsLibrary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7A310C8117432E4600CD5263 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
 		7A310C8217432E4600CD5263 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 		7A39A7A21749AFE600F19669 /* fotoriety.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fotoriety.png; sourceTree = "<group>"; };
-		7A39A7A41749B07000F19669 /* fotoriety114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fotoriety114x114.png; path = ../fotoriety114x114.png; sourceTree = "<group>"; };
-		7A39A7A61749B07400F19669 /* fotoriety57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fotoriety57x57.png; path = ../fotoriety57x57.png; sourceTree = "<group>"; };
 		7A39A7AA1749D41100F19669 /* FotorietyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FotorietyModel.h; sourceTree = "<group>"; };
 		7A39A7AB1749D41100F19669 /* FotorietyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FotorietyModel.m; sourceTree = "<group>"; };
 		7A4B132417406EA9003241F3 /* Fotoriety.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fotoriety.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +48,9 @@
 		7A4B134017406EA9003241F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		7A4B134217406EA9003241F3 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		7A4B134317406EA9003241F3 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		7AFBF518174EA6A2004C080F /* fotoriety57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fotoriety57x57.png; sourceTree = "<group>"; };
+		7AFBF519174EA6A2004C080F /* fotoriety114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fotoriety114x114.png; sourceTree = "<group>"; };
+		7AFBF51C174EBB2A004C080F /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AFBF51D174EBB2A004C080F /* AssetsLibrary.framework in Frameworks */,
 				7A4B132817406EA9003241F3 /* UIKit.framework in Frameworks */,
 				7A4B132A17406EA9003241F3 /* Foundation.framework in Frameworks */,
 				7A4B132C17406EA9003241F3 /* CoreGraphics.framework in Frameworks */,
@@ -68,6 +71,7 @@
 		7A4B131B17406EA9003241F3 = {
 			isa = PBXGroup;
 			children = (
+				7AFBF51C174EBB2A004C080F /* AssetsLibrary.framework */,
 				7A4B132D17406EA9003241F3 /* Fotoriety */,
 				7A4B132617406EA9003241F3 /* Frameworks */,
 				7A4B132517406EA9003241F3 /* Products */,
@@ -112,8 +116,8 @@
 		7A4B132E17406EA9003241F3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7A39A7A61749B07400F19669 /* fotoriety57x57.png */,
-				7A39A7A41749B07000F19669 /* fotoriety114x114.png */,
+				7AFBF518174EA6A2004C080F /* fotoriety57x57.png */,
+				7AFBF519174EA6A2004C080F /* fotoriety114x114.png */,
 				7A39A7A21749AFE600F19669 /* fotoriety.png */,
 				7A4B132F17406EA9003241F3 /* Fotoriety-Info.plist */,
 				7A4B133017406EA9003241F3 /* InfoPlist.strings */,
@@ -183,8 +187,8 @@
 				7A4B133E17406EA9003241F3 /* Default-568h@2x.png in Resources */,
 				7A4B134117406EA9003241F3 /* MainStoryboard.storyboard in Resources */,
 				7A39A7A31749AFE600F19669 /* fotoriety.png in Resources */,
-				7A39A7A51749B07000F19669 /* fotoriety114x114.png in Resources */,
-				7A39A7A71749B07400F19669 /* fotoriety57x57.png in Resources */,
+				7AFBF51A174EA6A2004C080F /* fotoriety57x57.png in Resources */,
+				7AFBF51B174EA6A2004C080F /* fotoriety114x114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

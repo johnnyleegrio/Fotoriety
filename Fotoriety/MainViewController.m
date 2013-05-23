@@ -35,33 +35,11 @@
     _mainPagePhoto.image = [info valueForKey:@"UIImagePickerControllerOriginalImage"];
     _mainPagePhoto.contentMode = UIViewContentModeScaleAspectFit;
     
-    //[self performSegueWithIdentifier: @"EditViewSegue" sender:self];
-    [self dismissViewControllerAnimated:YES completion:nil];
-    
-    //NSMutableDictionary *metadata = [[NSMutableDictionary alloc] initWithDictionary: [info objectForKey:UIImagePickerControllerMediaMetadata]];
     NSURL *assetURL = [info objectForKey:UIImagePickerControllerReferenceURL];
-    NSLog(@"%@",assetURL);
+    _fm = [[FotorietyModel alloc] init];
+    _fm.imageURL = assetURL;
     
-    UIStoryboardSegue *segue = [[UIStoryboardSegue alloc] init];
-    EditViewController* edit = segue.destinationViewController;
-    // Get the Edit View Controller set up properly
-    edit.editPagePhoto = self.mainPagePhoto;
-    
-    
-    //NSData *imgData = [NSData dataWithContentsOfURL:assetURL];
-    
-    //NSLog(@"original metadata: %@",metadata);
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
-
-- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    EditViewController* edit = segue.destinationViewController;
-    // Get the Edit View Controller set up properly
-    edit.editPagePhoto = self.mainPagePhoto;
-
-}
-
-
-
 
 @end

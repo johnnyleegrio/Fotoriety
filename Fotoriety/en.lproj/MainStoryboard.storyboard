@@ -40,11 +40,10 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2b5-FJ-ziz">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="mKJ-4K-nmc"/>
-                                    <constraint firstAttribute="height" constant="35" id="zbr-Ep-cGv"/>
+                                    <constraint firstAttribute="height" constant="40" id="ypb-mL-gCn"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="View Photos">
+                                <state key="normal" title="select photo from library">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -61,9 +60,9 @@
                         <constraints>
                             <constraint firstItem="DxO-yb-JM2" firstAttribute="trailing" secondItem="AKx-wg-euT" secondAttribute="trailing" type="default" id="9RW-cG-iXf"/>
                             <constraint firstItem="DxO-yb-JM2" firstAttribute="top" secondItem="AKx-wg-euT" secondAttribute="top" type="default" id="AoA-Fx-iQi"/>
-                            <constraint firstAttribute="bottom" secondItem="2b5-FJ-ziz" secondAttribute="bottom" constant="38" id="DGr-IC-Bah"/>
                             <constraint firstItem="DxO-yb-JM2" firstAttribute="centerX" secondItem="2b5-FJ-ziz" secondAttribute="centerX" type="default" id="MFv-qX-ajX"/>
                             <constraint firstItem="DxO-yb-JM2" firstAttribute="leading" secondItem="AKx-wg-euT" secondAttribute="leading" type="default" id="fL3-vO-D7e"/>
+                            <constraint firstAttribute="bottom" secondItem="2b5-FJ-ziz" secondAttribute="bottom" constant="44" id="if9-iX-nWn"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Fotoriety" id="BSX-Ql-pRC"/>
@@ -89,6 +88,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView alpha="0.75" contentMode="center" image="fotoriety.png" translatesAutoresizingMaskIntoConstraints="NO" id="kEk-Ks-u8a">
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="gQu-zr-g0d"/>
                                 </constraints>
@@ -104,16 +104,35 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syf-vX-gq3">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Hrb-pc-ftl"/>
+                                    <constraint firstAttribute="width" constant="200" id="cum-w3-R8b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="submit photo note">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="bag-9p-b9q" firstAttribute="top" secondItem="Yb6-X8-4jH" secondAttribute="top" constant="121" id="1xr-Fi-54l"/>
                             <constraint firstItem="kEk-Ks-u8a" firstAttribute="leading" secondItem="Yb6-X8-4jH" secondAttribute="leading" type="default" id="6mu-C7-kAF"/>
+                            <constraint firstItem="syf-vX-gq3" firstAttribute="centerX" secondItem="bag-9p-b9q" secondAttribute="centerX" type="default" id="E2w-mR-VrU"/>
                             <constraint firstItem="kEk-Ks-u8a" firstAttribute="trailing" secondItem="Yb6-X8-4jH" secondAttribute="trailing" type="default" id="Jbj-xX-WMb"/>
+                            <constraint firstAttribute="bottom" secondItem="syf-vX-gq3" secondAttribute="bottom" constant="44" id="Qwg-HY-JVh"/>
                             <constraint firstItem="kEk-Ks-u8a" firstAttribute="top" secondItem="Yb6-X8-4jH" secondAttribute="top" constant="44" id="VhI-OI-5aB"/>
                             <constraint firstItem="bag-9p-b9q" firstAttribute="centerX" secondItem="kEk-Ks-u8a" secondAttribute="centerX" type="default" id="xBL-TM-EPA"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="pL3-nX-f4p" appends="YES" id="7Jm-Me-JWE"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Edit Notes" id="mwl-ky-XfK"/>
                     <connections>
@@ -122,6 +141,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xhj-yn-hdy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="pL3-nX-f4p">
+                    <connections>
+                        <segue destination="e9e-St-8ma" kind="modal" identifier="HomeViewSegue" modalTransitionStyle="flipHorizontal" id="YJO-P2-JZZ"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="495" y="27"/>
         </scene>
@@ -153,4 +177,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="YJO-P2-JZZ"/>
+    </inferredMetricsTieBreakers>
 </document>
